@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg8"
+    tools:context="comsic.fred.mytaff.Aboutme">
+
+    <TextView
+        android:id="@+id/txtTitleAboutme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my_margin"
+        android:text="@string/aboutMe"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/h1"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:id="@+id/imvImageAboutme"
+        android:layout_width="@dimen/my_picture"
+        android:layout_height="@dimen/my_picture"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/fff"
+        android:layout_below="@+id/txtTitleAboutme"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnBack"
+        android:layout_below="@+id/imvImageAboutme"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin"
+        android:background="#c8ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDetailScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_margin"
+                android:text="@string/abname"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtDetailScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_margin"
+                android:text="@string/abid"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtDetailScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_margin"
+                android:text="@string/abclass"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txttle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_margin"
+                android:text="tel . 0906473525"
+                android:textSize="@dimen/h3" />
+            <TextView
+                android:id="@+id/txtDetailScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_margin"
+                android:onClick="onfb"
+                android:text="@string/abfb"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:onClick="backmain"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ondetail"
+            android:text="@string/detail" />
+    </LinearLayout>
+</RelativeLayout>

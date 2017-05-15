@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mytaff</string>
+
+    <string name="txtTitle">ป้ายจราจร</string>
+    <string name="moreInfo">More Info.</string>
+    <string name="aboutMe">About Me</string>
+    <string name="detail">Detail</string>
+    <string name="abname">นาย โฆษิต คุณวงค์</string>
+    <string name="abclass">หลักสูตร วิทยาการคอม</string>
+    <string name="abfb">Aunfred forfun</string>
+    <string name="abid">รหัส 5711020660034</string>
+
+</resources>
